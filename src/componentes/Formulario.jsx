@@ -10,7 +10,7 @@ import Error from "./Error";
 
 
 const InputSubmit = styled.input` 
-background-color: #9497FF;
+background-color: rgb(44,44,190);
 border: none;
 width: 100%;
 padding: 10px;
