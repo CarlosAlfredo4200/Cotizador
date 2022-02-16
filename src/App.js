@@ -1,7 +1,7 @@
 import React, {useState, useEffect} from 'react';
 import styled from "@emotion/styled";
 import Formulario from "./componentes/Formulario";
-import ImagenCripto from "./img/imagen-criptos.png";
+import ImagenCripto from "./componentes/img/imagen-criptos.png";
 import Resultado from './componentes/Resultado';
 import Spinner from './componentes/Spinner';
 
@@ -97,7 +97,7 @@ console.log(resultado);
 
     
     <Contenedor>
-      <Imagen src="https://png.pngtree.com/element_our/md/20180712/md_5b4700ab483ff.jpg" alt="imagen"/>
+      <Imagen src={ImagenCripto} alt="imagen"/>
       <div>
       <Heading>Cotiza Criptomonedas al instante</Heading>
       <Formulario 
