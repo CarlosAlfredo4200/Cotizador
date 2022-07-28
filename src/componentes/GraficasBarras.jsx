@@ -65,9 +65,11 @@ const GraficaBarras = () => {
     let arrayNombres = [];
     let arrayPrecios = [];
 
+       
       resultado.Data.map((nom) => {
       arrayNombres.push(nom.CoinInfo.Name);
       arrayPrecios.push(nom.RAW.USD.PRICE);
+      return nom
     });
 
     setNombres(arrayNombres);
