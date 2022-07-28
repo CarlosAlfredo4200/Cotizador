@@ -8,12 +8,14 @@ font-family: 'lato', sans-serif;
 display: flex;
 align-items: center;
 gap: 1rem;
-margin-top: 30px;
+margin-top: 10px;
 `
 
 const Imagen = styled.img`
 display: block;
-width: 110px;
+width: 80px;
+margin: 0 10px;
+ 
 `
 
 const Texto = styled.p `
@@ -28,6 +30,7 @@ font-size: 24px;
 span{
     font-weight: 700;
     color: rgb(245, 241, 11);
+     
 }
 `
 
@@ -43,7 +46,7 @@ const Resultado = ({resultado}) => {
       <ResultadoFinal>
         <Imagen src={`http://cryptocompare.com/${IMAGEURL}`} alt="Imagen cripto"></Imagen>
 
-        <div>
+        <div className='resultados'>
 
          <Precio>El precio es: <span>{PRICE}</span></Precio>
          <Texto>El precio mas alto del día es: <span>{HIGHDAY}</span></Texto>
