@@ -8,7 +8,7 @@ font-family: 'lato', sans-serif;
 display: flex;
 align-items: center;
 gap: 1rem;
-margin-top: 10px;
+ 
 `
 
 const Imagen = styled.img`
@@ -19,19 +19,21 @@ margin: 0 10px;
 `
 
 const Texto = styled.p `
-font-size: 14px;
+font-size: 12px;
 span{
     font-weight: 700;
     color: rgb(245, 241, 11);
 }
 `
 const Precio = styled.p `
-font-size: 24px;
+font-size: 20px;
 span{
     font-weight: 700;
     color: rgb(245, 241, 11);
      
 }
+
+ 
 `
 
 
@@ -43,16 +45,16 @@ const Resultado = ({resultado}) => {
     
 
   return (
-      <ResultadoFinal>
+      <ResultadoFinal className='resultados'>
         <Imagen src={`http://cryptocompare.com/${IMAGEURL}`} alt="Imagen cripto"></Imagen>
 
-        <div className='resultados'>
+        <div >
 
-         <Precio>El precio es: <span>{PRICE}</span></Precio>
-         <Texto>El precio mas alto del día es: <span>{HIGHDAY}</span></Texto>
-         <Texto>El precio ams bajo del días es: <span>{LOWDAY}</span></Texto>
-         <Texto>Variación ultimas 24 horas : <span>{CHANGEPCT24HOUR}</span></Texto>
-         <Texto>Ultima actualización : <span>{LASTUPDATE}</span></Texto>
+         <Precio className='text-precio'>El precio es: <span>{PRICE}</span></Precio>
+         <Texto className='text-precio'>El precio mas alto del día es: <span>{HIGHDAY}</span></Texto>
+         <Texto className='text-precio'>El precio ams bajo del días es: <span>{LOWDAY}</span></Texto>
+         <Texto className='text-precio'>Variación ultimas 24 horas : <span>{CHANGEPCT24HOUR}</span></Texto>
+         <Texto className='text-precio'>Ultima actualización : <span>{LASTUPDATE}</span></Texto>
         </div>
          
       </ResultadoFinal>
