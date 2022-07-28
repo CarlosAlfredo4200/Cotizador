@@ -1,7 +1,7 @@
 body{
     max-width: 100%;
-    /* background-image: linear-gradient(to bottom, black 20%, white 77%); */
-     background-color: black;
+    background-image: linear-gradient(to bottom, black 70%, white 100%);
+     
     font-family: "Lato", sans-serif;
     font-weight: 700;
     
@@ -84,7 +84,7 @@ body{
     background-color: rgb(218, 215, 215, .1);
     border-radius: 8px;
     font-size: 11px;
-    color: white;
+    color: black;
      
 }
 .resultados{
@@ -156,7 +156,7 @@ body{
         max-width: 1200px;
         padding: 20px 10px;
         font-size: 16px;
-        color: white;
+        color: black;
 
     }
     .bar{
